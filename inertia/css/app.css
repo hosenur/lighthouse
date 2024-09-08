@@ -46,7 +46,7 @@
     --input: 91.97% 0.004 286.32;
     --ring: var(--primary);
     --toggle: 87.16% 0.006 286.28;
-    --radius: 0.5rem;
+    --radius: 0.25rem;
   }
 
   .dark {
