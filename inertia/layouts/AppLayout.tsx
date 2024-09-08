@@ -1,4 +1,3 @@
-import React from "react"
 import {
     IconBell,
     IconBook,
@@ -10,18 +9,17 @@ import {
     IconEnvelope,
     IconLogout,
     IconMessage,
-    IconMoon,
     IconSearch,
     IconSettings,
     IconShield,
-    IconSun,
     IconSupport
 } from "justd-icons"
-import { Button } from "~/components/ui/button"
+import React from "react"
 import { Aside } from "~/components/ui/aside"
 import { Avatar } from "~/components/ui/avatar"
-import { Menu } from "~/components/ui/menu"
+import { Button } from "~/components/ui/button"
 import { Link } from "~/components/ui/link"
+import { Menu } from "~/components/ui/menu"
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {
     return (

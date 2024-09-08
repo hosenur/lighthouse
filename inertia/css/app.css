@@ -88,21 +88,21 @@
 }
 
 @layer base {
-    html {
-        @apply scroll-smooth;
-    }
+  html {
+    @apply scroll-smooth;
+  }
 
-    * {
-        @apply border-border text-sm;
-        font-feature-settings: 'cv11', 'ss01';
-        font-variation-settings: 'opsz' 850;
-    }
+  * {
+    @apply border-border text-sm;
+    font-feature-settings: 'cv11', 'ss01';
+    font-variation-settings: 'opsz' 850;
+  }
 
-    body {
-        @apply bg-bg text-fg dark text-sm font-dm uppercase;
-    }
+  body {
+    @apply bg-bg text-fg dark text-sm font-dm uppercase;
+  }
 }
 
 .react-aria-DropIndicator[data-drop-target] {
-    outline: 1px solid oklch(var(--primary));
+  outline: 1px solid oklch(var(--primary));
 }
