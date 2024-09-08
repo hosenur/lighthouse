@@ -10,7 +10,7 @@ export default function Home(props: { apps: any }) {
     <AppLayout>
       <Head title="Homepage" />
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-2">
         {
           props.apps.map((app: any) => {
             return (
@@ -21,7 +21,7 @@ export default function Home(props: { apps: any }) {
                 </Card.Header>
                 <Card.Content>
                   <p>Memory Usage: {Math.round(app.monit.memory/1024/1024)} MB</p>
-                  <p>Cpu Usage: {Math.round(app.monit.cpu/1024/1024)} MB</p>
+                  <p>CPU Usage: {Math.round(app.monit.cpu/1024/1024)} MB</p>
                 </Card.Content>
               </Card>
             )

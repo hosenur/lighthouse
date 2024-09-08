@@ -93,13 +93,13 @@
     }
 
     * {
-        @apply border-border;
+        @apply border-border text-sm;
         font-feature-settings: 'cv11', 'ss01';
         font-variation-settings: 'opsz' 850;
     }
 
     body {
-        @apply bg-bg text-fg dark text-sm;
+        @apply bg-bg text-fg dark text-sm font-dm uppercase;
     }
 }
 

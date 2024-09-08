@@ -13,6 +13,9 @@ const config = withTV({
       },
     },
     extend: {
+      fontFamily: {
+        dm: ['DM Mono', 'monospace']
+      },
       colors: {
         light: "oklch(var(--light) / <alpha-value>)",
         dark: "oklch(var(--dark) / <alpha-value>)",

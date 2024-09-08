@@ -67,6 +67,7 @@
     "@adonisjs/shield": "^8.1.1",
     "@adonisjs/static": "^1.1.1",
     "@adonisjs/vite": "^3.0.0",
+    "@fontsource/dm-mono": "^5.0.22",
     "@inertiajs/react": "^1.2.0",
     "@vinejs/vine": "^2.1.0",
     "better-sqlite3": "^11.2.1",

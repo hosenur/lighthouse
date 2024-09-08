@@ -2,6 +2,9 @@
 /// <reference path="../../config/inertia.ts" />
 
 import '../css/app.css';
+import '@fontsource/dm-mono/300.css';
+import '@fontsource/dm-mono/400.css';
+import '@fontsource/dm-mono/500.css';
 import { createRoot } from 'react-dom/client';
 import { createInertiaApp } from '@inertiajs/react';
 import { resolvePageComponent } from '@adonisjs/inertia/helpers'
@@ -21,8 +24,8 @@ createInertiaApp({
   },
 
   setup({ el, App, props }) {
-    
+
     createRoot(el).render(<App {...props} />);
-    
+
   },
 });
