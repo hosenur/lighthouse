@@ -1,12 +1,9 @@
 import type { HttpContext } from '@adonisjs/core/http'
-import pm2 from 'pm2'
+import { execSync } from 'child_process'
 export default class AppsController {
     async index({ inertia }: HttpContext) {
-        const PM2Apps = await pm2.list((e) => {
-            console.log(e)
-        })
-        console.log(PM2Apps)
-        return inertia.render('home')
+        const res = JSON.parse(execSync('pm2 jlist').toString())
+        return inertia.render('home', { apps: res })
 
     }
 }
