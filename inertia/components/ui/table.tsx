@@ -1,4 +1,4 @@
-"use client"
+
 
 import { IconChevronLgDown, IconChevronLgUp, IconFilterAsc, IconHamburger } from "justd-icons"
 import type {

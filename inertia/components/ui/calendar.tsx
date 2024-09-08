@@ -1,4 +1,4 @@
-"use client"
+
 
 import { IconChevronLgLeft, IconChevronLgRight } from "justd-icons"
 import {

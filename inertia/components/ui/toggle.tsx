@@ -1,4 +1,4 @@
-"use client"
+
 
 import type { ToggleButtonProps } from "react-aria-components"
 import { ToggleButton as ToggleButtonPrimitive } from "react-aria-components"
