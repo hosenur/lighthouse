@@ -99,7 +99,7 @@
     }
 
     body {
-        @apply bg-bg text-fg;
+        @apply bg-bg text-fg dark;
     }
 }
 
