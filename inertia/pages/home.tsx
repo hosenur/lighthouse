@@ -17,7 +17,7 @@ export default function Home(props: { apps: any }) {
               <Card className="max-w-lg" key={app.pm_id}>
                 <Card.Header className='flex justify-between flex-row'>
                   <Card.Title>{app.name}</Card.Title>
-                  <Badge>Running</Badge>
+                  <Badge intent='success'>Running</Badge>
                 </Card.Header>
                 <Card.Content>
                   <p>Memory Usage: {Math.round(app.monit.memory/1024/1024)} MB</p>
