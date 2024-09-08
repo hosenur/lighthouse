@@ -7,7 +7,6 @@
 |
 */
 
-import ContainersController from '#controllers/containers_controller'
 import router from '@adonisjs/core/services/router'
-router.get('/', [ContainersController, 'index'])
+router.on('/').renderInertia('home', { version: 6 })
 
