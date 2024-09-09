@@ -16,8 +16,7 @@ export default function Home(props: { apps: any, platform: string, totalMem: num
             <Icon name={props.platform} />
             <p>{props.platform}</p>
           </div>
-          <p>Total Memory: {Math.round(props.totalMem / 1024 / 1024)} MB</p>
-          <p>Free Memory: {Math.round(props.freeMem / 1024 / 1024)} MB</p>
+          <p>RAM Usage: {Math.ceil(props.freeMem / 1024 / 1024 / 1024)} / {Math.ceil(props.totalMem / 1024 / 1024 / 1024)} GB</p>
         </div>
 
 
@@ -32,7 +31,7 @@ export default function Home(props: { apps: any, platform: string, totalMem: num
                   </Card.Header>
                   <Card.Content>
                     <p>Memory Usage: {Math.round(app.monit.memory / 1024 / 1024)} MB</p>
-                    <p>CPU Usage: {Math.round(app.monit.cpu / 1024 / 1024)} MB</p>
+                    <p>CPU Usage: {Math.round(app.monit.cpu / 1024 / 1024)}</p>
                     <p>Uptime: {moment().startOf('hour').from(moment(app.pm2_env.pm_uptime), true)}</p>
                     <div className='flex flex-row gap-1 items-center'>
                       <Icon name={getInterpreter(app.pm2_env.exec_interpreter)} />

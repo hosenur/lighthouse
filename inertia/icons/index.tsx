@@ -1,8 +1,7 @@
-import React from 'react'
-import NodeIcon from './node'
 import BunIcon from './bun'
-import WindowsIcon from './windows'
 import LinuxIcon from './linux'
+import NodeIcon from './node'
+import WindowsIcon from './windows'
 
 export default function Icon({ name }: { name: string }) {
     switch (name) {

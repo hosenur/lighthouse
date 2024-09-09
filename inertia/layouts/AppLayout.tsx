@@ -1,14 +1,11 @@
 import {
     IconBell,
     IconBook,
-    IconBrandJustd,
     IconChevronLgDown,
     IconCirclePerson,
-    IconCreditCard,
+    IconCodeLines,
     IconDashboard,
-    IconEnvelope,
     IconLogout,
-    IconMessage,
     IconSearch,
     IconSettings,
     IconShield,
@@ -77,8 +74,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
                 <>
                     <Aside.Header className="h-12">
                         <Link className="flex items-center gap-x-2" href="#">
-                            <IconBrandJustd />
-                            <strong>Justd</strong>
+                            <strong>lighthouse</strong>
                         </Link>
                     </Aside.Header>
                     <Aside.Content>
@@ -86,17 +82,11 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
                             <Aside.Item isCurrent icon={IconDashboard} href="#">
                                 Overview
                             </Aside.Item>
+                            <Aside.Item icon={IconCodeLines} href="#">
+                                Logs
+                            </Aside.Item>
                             <Aside.Item icon={IconSettings} href="#">
                                 Settings
-                            </Aside.Item>
-                            <Aside.Item icon={IconCreditCard} href="#">
-                                Billing
-                            </Aside.Item>
-                            <Aside.Item icon={IconEnvelope} href="#" badge="49.67K">
-                                Newsletter
-                            </Aside.Item>
-                            <Aside.Item icon={IconMessage} href="#" badge={35}>
-                                Messages
                             </Aside.Item>
                         </Aside.Section>
                     </Aside.Content>
