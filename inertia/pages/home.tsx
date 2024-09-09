@@ -2,6 +2,7 @@ import { Head } from '@inertiajs/react'
 import { Badge } from '~/components/ui/badge'
 import { Card } from '~/components/ui/card'
 import AppLayout from '~/layouts/AppLayout'
+import { getImage, getInterpreter } from '../../lib/utils'
 import moment from 'moment'
 export default function Home(props: { apps: any }) {
   console.log(props.apps)
@@ -22,6 +23,10 @@ export default function Home(props: { apps: any }) {
                   <p>Memory Usage: {Math.round(app.monit.memory / 1024 / 1024)} MB</p>
                   <p>CPU Usage: {Math.round(app.monit.cpu / 1024 / 1024)} MB</p>
                   <p>Uptime: {moment().startOf('hour').from(moment(app.pm2_env.pm_uptime), true)}</p>
+                  <div className='flex flex-row gap-1 items-center'>
+                    <img src={getImage(app.pm2_env.exec_interpreter)} className='w-3.5' alt={app.pm2_env.exec_interpreter} />
+                    <p>{getInterpreter(app.pm2_env.exec_interpreter)}</p>
+                  </div>
                 </Card.Content>
               </Card>
             )
