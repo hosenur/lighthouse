@@ -75,7 +75,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
             }
             aside={
                 <>
-                    <Aside.Header>
+                    <Aside.Header className="h-12">
                         <Link className="flex items-center gap-x-2" href="#">
                             <IconBrandJustd />
                             <strong>Justd</strong>
