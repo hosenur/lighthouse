@@ -1,9 +1,8 @@
 import { Head } from '@inertiajs/react'
 import { Badge } from '~/components/ui/badge'
-import { Button } from '~/components/ui/button'
 import { Card } from '~/components/ui/card'
 import AppLayout from '~/layouts/AppLayout'
-
+import moment from 'moment'
 export default function Home(props: { apps: any }) {
   console.log(props.apps)
   return (
@@ -20,8 +19,9 @@ export default function Home(props: { apps: any }) {
                   <Badge intent='success'>Running</Badge>
                 </Card.Header>
                 <Card.Content>
-                  <p>Memory Usage: {Math.round(app.monit.memory/1024/1024)} MB</p>
-                  <p>CPU Usage: {Math.round(app.monit.cpu/1024/1024)} MB</p>
+                  <p>Memory Usage: {Math.round(app.monit.memory / 1024 / 1024)} MB</p>
+                  <p>CPU Usage: {Math.round(app.monit.cpu / 1024 / 1024)} MB</p>
+                  <p>Uptime: {moment().startOf('hour').from(moment(app.pm2_env.pm_uptime), true)}</p>
                 </Card.Content>
               </Card>
             )
